@@ -26,7 +26,13 @@ $schema->populate('Entity', [
 ]);
 
 # get 5 fresh less allocated IP's
-$schema->sea
+$schema->resultset('Entity2Ip')->search(
+  {},
+  { join      => 'ips',
+    order_by  => ['-total'],
+    limit     => 5
+  }
+);
 
 
 # select ip_id from ip order by random() limit 5;
