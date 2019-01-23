@@ -1,2 +1,3 @@
-# duckduck
-Duck
+# Especially for .masterhost
+
+Nothing interesing inside :)
